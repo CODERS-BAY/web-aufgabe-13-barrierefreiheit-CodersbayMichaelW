@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Accessibility</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <div class="header-div">
+                <picture>
+                    <source media="(min-width:700px)" srcset="img/wheelchair_on_a_beach.jpg">
+                    <img class="header-pic" src="img/wheelchair_on_a_beach2.jpg" alt="wheelchair on a beach">
+                </picture>
+                <h1>Accessibility</h1>
+            </div>
+        </header>
+        
+        <main>
+            <!-- navigation -->
+            <input type="checkbox" id="check"/>
+            <label for="check">
+            <p id="btn">☰ Menu</p>
+            <p id="cancel">X</p>
+            </label>
+            <nav class="sidebar">
+                <header>Menu</header>
+                <ul>
+                    <li><a href="#principles">Principle</a></li>
+                    <li><a href="#thoughts">Thoughts</a></li>
+                    <li><a href="#to-whom?">To Whom?</a></li>
+                    <li><a href="#tech-tool">Tech-Tools</a></li>
+                    <li><a href="#nav-help">Nav-Help</a></li>
+                    <li><a href="#nav-tools">Nav-Tools</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-body">
+                <br id="principles">
+                <section>
+                    <h2>Principles</h2>
+                    <div>
+                        <h3>Clarity</h3>
+                        <ul>
+                            <li>Clear Language, Flow and Hierarchy for visuelle elements.</li>
+                            <li>It should not be possible to provoke a error.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Compactness</h3>
+                        <ul>
+                            <li>A big challenge to compine clarity and compactness with eachother.</li>
+                            <li>Don't overflowed the user with permanent help, description, warnings and hints.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Familiarity</h3>
+                        <ul>
+                            <li>Use familiar/traditional control elements and program sequences.</li>
+                            <li>Don't use to many new innovation.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Responsiveness</h3>
+                        <ul>
+                            <li>After a click or keystroke there should be an immediately feedback to the user.</li>
+                            <li>Inform the user when there is longer loading times.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Constistancy</h3>
+                        <ul>
+                            <li>Buttons should have the same trigger and animation.</li>
+                            <li>The Layout should be the same on all the pages of the Website.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Aesthetics</h3>
+                        <ul>
+                            <li>Optik is a very important aspect for an appealing Design of a Website.</li>
+                            <li>This is the part where the user desiced if he wants to use the Website or not.</li>
+                            <li>Small mistakes can be overseen by the user when the aesthic of the Website is appealing.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Tolerance</h3>
+                        <ul>
+                            <li>User makes mistakes and should be dealt trouble-free.</li>
+                            <li>The Application should help/guide the user. (undo-function)</li>
+                            <li>Security queries are not well seen by the user.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <hr id="thoughts">
+                <section>
+                    <h2>Thoughts before creating</h2>
+                    <img src="img/thoughts.png" class="center-img" alt="picture with a list of barriers, causes and requirements listed">
+                    <ul>
+                        <li>It's not possible to create a 100-percent accessibility of a website.</li>
+                        <li>Make all the Information accessible to all of your users.</li>
+                        <li>Use established standards to meet the expectation of the users.</li>
+                    </ul>
+                </section>
+
+                <hr id="to-whom?">
+                <section>
+                    <h2>Who needs it?</h2>
+                    <ul>
+                        <li>Users with empty wireless mouse battery.</li>
+                        <li>People above 50.</li>
+                        <li>People with Tendonitis in the wrist</li>
+                        <li>For blind people.</li>
+                        <li>Users with a red-green weakness.</li>
+                        <li>Users with a slow internet connection.</li>
+                    </ul>
+                </section>
+
+                <hr id="tech-tool">
+                <section>
+                    <h2>Technical tools of an user</h2>
+                    <ul>
+                        <li>magnification software (Magnifier)</li>
+                        <li>Screen Reader</li>
+                        <li>Braile Line</li>
+                        <li>Voice control</li>
+                        <li>special keyboard</li>
+                        <li>Touchscreens</li>
+                        <li>Electronic control via eyes or head movement</li>
+                        <li>Blowpipe via breath</li>
+                    </ul>
+                </section>
+
+                <hr id="nav-help">
+                <section>
+                    <h2>Navigation help</h2>
+                    <ul>
+                        <li>magnification software (Magnifier)</li>
+                        <li>Screen Reader</li>
+                        <li>Braile Line</li>
+                        <li>Voice control</li>
+                        <li>special keyboard</li>
+                        <li>Touchscreens</li>
+                        <li>Electronic control via eyes or head movement</li>
+                        <li>Blowpipe via breath</li>
+                    </ul>
+                </section>
+
+                <hr id="nav-tools">
+                <section>
+                    <h2>Navigation tools</h2>
+                    <div>
+                        <h3>Sitemap</h3>
+                        <p>A special page with all the links to the content the Website provides.</p>
+                        <p>It is to prevere to make the page visuell appealing and structured.</p>
+                    </div>
+                    <div>
+                        <h3>Index/Glossary</h3>
+                        <p>Good for Websites with different Topics and with high amount of inforamtion. (Wiki)</p>
+                        <p>The index is alphabetical ordered.</p>
+                    </div>
+                    <div>
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Collection of question with answer related to the website.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
+</html>

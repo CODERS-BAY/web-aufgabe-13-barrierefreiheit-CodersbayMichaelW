@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(248, 248, 248);
+    color: rgb(25, 25, 25);
+    font-family: 'Merriweather', Arial;
+}
+main {
+    width: 90%;
+}
+
+/* header-imgage */
+.header-div {
+    position: relative;
+}
+.header-pic {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 0 0 30px 30px;
+}
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 5vw;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 5px rgb(0, 255, 255)
+}
+/* @media (min-width: 700px) {
+    .header-pic {
+    }
+} */
+
+
+/* navigation */
+.sidebar {
+    position: fixed;
+    top: 30px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgb(4, 35, 49);
+    transition: all 0.5s ease;
+
+    overflow-y: scroll;
+}
+.sidebar li:last-of-type {
+    padding-bottom: 40px;
+}
+.sidebar header {
+    font-size: 2rem;
+    color: rgb(0, 255, 255);
+    line-height: 70px;
+    text-align: center;
+    background: rgb(6, 49, 70);
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+ul li:hover a {
+    padding-left: 50px;
+} 
+#check {
+    display: none;
+}
+label #btn, label #cancel {
+    position: fixed;
+    background: rgb(4, 35, 49);
+    border-radius: 3px;
+    cursor: pointer;
+}
+label #btn {
+    left: 10px;
+    top: 10px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    transition: all 0.5s;
+}
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: rgb(0, 255, 255);
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+label #cancel:hover {
+    color: rgb(255, 0, 0)
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+#check:checked ~ section:not(.main-body) {
+    margin-left: 250px;
+}
+
+/* Main */
+.main-body {
+    margin-left: 8%;
+    transition: all 0.5s ease;
+}
+
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+    text-decoration: underline solid rgb(0, 255, 255); 
+    text-decoration-thickness: 2px;
+}
+h3 {
+    text-decoration: underline solid rgb(0, 0, 0);
+}
+.main-body img {
+    max-width: 60vw;
+    border: 1px solid rgb(25, 25, 25);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+
+    -moz-box-shadow: 10px 10px 5px rgb(204, 204, 204);
+    -webkit-box-shadow: 10px 10px 5px rgb(204, 204, 204);
+    box-shadow: 10px 10px 5px rgb(204, 204, 204);
+}
+section {
+    margin-bottom: 5rem;
+}
+.main-body section div:not(:first-of-type) {
+    margin-top: 2rem;
+}
+.main-body section:last-of-type {
+    margin-bottom: 10rem;
+}
+
+.main-body li {
+    margin: 0.5rem 0;
+}
+.main-body p {
+    margin: 0.5rem 0;
+}
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+@media (min-width: 700px) {
+    .main-body {
+        margin-left: 15%;
+    }
+    img {
+        max-width: 40vw;
+    }
+    #check:checked ~ .main-body {
+        margin-left: 20rem;
+    }
+    h1 {
+        font-size: 3vw;
+    }
+
+    .main-body ul {
+        padding: 0;
+        margin-bottom: 4em;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+    .main-body li {
+        position: relative;
+        display: block;
+        padding: .4rem .4rem .4rem .8rem;
+        margin: 0.5rem 0 .5rem 2.5rem;
+        background: rgb(221, 221, 221);
+        color: rgb(68, 68, 68);
+        text-decoration: none;
+        transition: all .3s ease-out;
+    }
+    .main-body li:hover {
+        background: rgba(0, 255, 255, 0.1);
+    }
+    .main-body li:before{
+        content: "●";
+        position: absolute;
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: rgb(0, 255, 255);
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+      }
+    .main-body li:after {
+        position: absolute;
+        content: '';
+        border: .5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -.5em;
+        transition: all .3s ease-out;
+    }
+    .main-body li:hover:after {
+        left: -.5em;
+        border-left-color: rgb(0, 255, 255);
+    }
+}
